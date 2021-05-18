@@ -1,0 +1,163 @@
+@font-face {
+	font-family: "ContentFont";  
+	src: url("../fonts/content.otf") format("truetype"); 
+	font-style: normal; 
+	font-weight: normal; 
+}
+
+body {
+    margin: 0;
+}
+
+header {
+	width: 1000px;
+    height: 200px;
+    background: #758493;
+	position: fixed;
+    left: calc(50vw - 500px);
+    z-index: 1;
+}
+
+header img {
+    width: 420px;
+    height: 150px;
+    margin-top: 25px;
+    margin-left: 290px;
+}
+
+nav {
+    font-family: "ContentFont";
+    position: fixed;
+    width: 150px;
+    padding: 10px;
+    top: 200px;  
+    background: #008080;
+    left: calc(50vw - 500px);
+}
+
+.menu {
+    width: 150px; /* Set a width if you like */
+}
+
+.menu a {
+    background-color: #aaaeee; /* Grey background color */
+    color: #001e43; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.menu a:hover {
+    background-color: #92F4A5; /* Dark grey background on mouse-over */
+}
+
+.menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+.buttons {
+    display: block;
+}
+
+.input_record {
+    padding: 0;
+}
+.input_record_field {
+    resize: none;
+    overflow: auto;
+    padding: 0;
+    width: 150px;  
+    height: 150px;
+}
+
+main {
+    font-family: "ContentFont";
+    position: fixed;
+    width: 770px;
+    padding: 10px 30px;
+    background: #e0e0e0; /* Цвет заднего фона */ 
+    color: #001e43;
+    top: 200px;
+    left: calc(50vw - 330px);
+    bottom: 40px;
+    overflow: auto;
+}
+
+.main_container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.step {
+    background-color: #8db596;
+    margin: 15px 7px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.field {
+    position: relative;
+    background-color: #BE96F8;
+}
+
+.record {
+    margin-left: 20px;
+    padding: 10px;
+    width: 400px;
+    background-color: #239399;
+}
+
+.field table {
+    border: 3px solid purple;
+    width: 300px;
+    height: 300px;
+    border-collapse: collapse;
+}
+
+.field td {
+    border: 3px solid purple;
+    width: 25px;
+    height: 25px;
+    line-height: 0;
+}
+
+.cellwhite {
+    background-color: #FFFFFF;
+}
+
+.cellblack {
+    background-color: #000000;
+}
+
+.field img {
+    width: 21px;
+    padding: 2px;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    font-family: "ContentFont";
+    width: 1000px; /* Ширина слоя */
+    height: 40px;
+    left: calc(50vw - 500px);
+    background: #444; /* фон */
+    color: #fff; /* цвет текста */
+    margin-right: auto; /* Авто-отступ справа */
+    margin-left: auto; /* Авто-отступ слева */
+    text-align: center;
+}
+
+.footer_text {
+    position: relative;
+    transform: translate(0%, -50%);
+    top: 50%;
+}
